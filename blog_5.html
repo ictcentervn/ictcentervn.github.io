@@ -1,0 +1,432 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>낭만이와 함께하는 소소한 일상과 프로그래밍 학습!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+    <style>
+        /* "선짜산 기행 3"과 동일한 스타일 적용 */
+        
+        /* 1. 본문 텍스트 스타일 */
+        .blog-text {
+            font-family: 'Noto Serif KR', serif; /* 명조체 */
+            font-size: 1.15em; /* 1.15배 크기 (약 17~18px) - 가독성 최적화 */
+            line-height: 1.8; /* 줄간격 여유 있게 */
+            text-align: justify; /* 양쪽 정렬 */
+            color: #333;
+        }
+        .blog-text p {
+            margin-bottom: 25px;
+        }
+
+        /* 2. 제목 폰트 스타일 */
+        h1, h2, h3, h4, h5, h6, .intro-heading h2, .heading {
+            font-family: 'Noto Sans KR', sans-serif !important; /* 고딕체 */
+            font-weight: 700;
+        }
+        
+        /* 3. 본문 내부 소제목 */
+        .blog-text h2 {
+            font-size: 1.5em;
+            color: #e67e22;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .blog-text h3 {
+            font-size: 1.3em;
+            color: #d35400;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        /* 4. 이미지 컨테이너 */
+        .blog-image-container {
+            text-align: center;
+            margin: 35px 0;
+        }
+        .blog-image-container img {
+            display: inline-block;
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .blog-image-container figcaption {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 10px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        /* 5. 인용구 및 특별 스타일 */
+        .blog-quote {
+            background-color: #f9f9f9;
+            border-left: 5px solid #e67e22;
+            padding: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            color: #555;
+            font-size: 1em;
+        }
+        .center-quote {
+            text-align: center;
+            font-size: 1.3em;
+            color: #444;
+            margin: 40px 0;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+        .poem {
+            text-align: center;
+            color: #666;
+            margin: 40px 0;
+            white-space: pre-line;
+            line-height: 2;
+        }
+        .dialogue-highlight {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        /* 구분선 */
+        hr { border-top: 1px solid #eee; margin: 50px 0; }
+    </style>
+
+</head>
+<body>
+
+	<nav id="colorlib-main-nav" role="navigation">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+		<div class="js-fullheight colorlib-table">
+			<div class="colorlib-table-cell js-fullheight">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<input type="text" class="form-control" id="search" placeholder="Enter any key to search...">
+							<button type="submit" class="btn btn-primary"><i class="icon-search3"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="blog.html">베트남 이야기</a></li>
+							<li><a href="work.html">인공지능소식</a></li>
+							<li><a href="services.html">ICT교육</a></li>
+							<li><a href="about.html">About</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="head-title">Works</h2>
+						<a href="images/work-1.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-1.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/about.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/about.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/about-2.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/about-2.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/blog1.png" class="gallery image-popup-link text-center" style="background-image: url(images/blog1.png);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="index.html"><span>낭만</span><span>浪漫</span></a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="colorlib-work">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">Blog</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<span>낭만이의 오토바이 여행</span>
+						<h2>선짜산 탐방 -4-</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rotate">
+							<h2 class="heading">천년고목</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="work-entry animate-box">
+                            <a href="blog.html" class="work-img" style="background-image: url(images/blog5_000.jpg);"></a>
+							
+                            <div class="col-md-8 col-md-offset-2">
+								<div class="desc blog-text">
+                                    
+                                    <h2>참파(占婆, 점파)<br><small style="font-size:0.7em; color:#777;">300여년 전 멸망한 고대 왕국</small></h2>
+                                    
+                                    <p>
+                                        1471년 베트남 후 레 왕조의 타인똥(성종 聖宗)에 의해 속국이 되고 1832년 응우옌 황제 때 합병으로 완전히 멸망한 참파. 
+                                        다낭의 유명한 유적지 중 하나인 '미선(My Son)'은 (베트남어로 '아름다운 산'이라는 뜻) 신화 속 왕인 스리사납하드레스바라(Srisanabhadresvara)를 숭배하며 
+                                        참파 왕국의 북부 지역인 아마라바티(Amaravati) 지역을 다스리던 두아(Dua)족에게 매우 신성한 곳이었다. 
+                                        멸망한 이 고대 왕국의 맥이 끊어진 지 어언 300여 년..
+                                    </p>
+                                    <p>
+                                        그 참파의 미선 유적지가 500여 년이 흐른 지금 '세계 문화 유산'이라는 이름으로 복원되고 있다. 
+                                        더불어 참파의 전통무와 전통 음악도 '관광 상품'이라는 이름으로 조금씩 관광객에게 소개되고 있다. 
+                                        500년 전 200여 년을 속국으로 살다가 300여 년 전에 완전히 멸망해버리고 인구마저 줄어들고 캄보디아로 미얀마로 
+                                        그리고 양국의 국경으로 밀려간 이 민족에게 고래로 부터 내려오는 전통이 남아 있을지 의문이긴 하지만 말이다.
+                                    </p>
+                                    <p>
+                                        이와는 반대로 기원전 111년 한 무제(BC 141 ~ BC 87)에 의해 복속을 강요당한 이후 1000년을 그들과 싸우고 동화되었지만, 
+                                        결코 사라지지 않고 그들 민족의 정체성을 지켜온 베트남! 수천 년 동안 그들의 조상이 그랬던 것처럼 이번에도 해일처럼 
+                                        밀려오는 서구의 문화를 그들의 문화와 전통에 융화시킬 것인가? 아니면...
+                                    </p>
+
+                                    <hr>
+
+                                    <div class="blog-quote">
+                                        "큰 나무를 세우고 방울과 북을 걸어서 귀신을 섬겼다." (『삼국지』 위지 동이전)고 전해지는 소도(蘇塗)의 나무 역시 당산(堂山)나무의 또 다른 보기이다. 
+                                        생나무나 나무기둥이나 우주 축으로서는 다를 바 없을 것이기 때문이다. 당산나무가 솟아 있고 우거져 있는 한 거기에는 고조선의 신단수의 잔영(殘影)이 스며져 있게 마련이다.
+                                        <br><span style="display:block; text-align:right; font-size:0.9em; margin-top:10px;">- 한국 신화와 무속연구 (김열규, 일조각, 1982) -</span>
+                                    </div>
+
+                                    <div class="blog-image-container">
+                                        <img src="images/blog5_001.jpg" alt="당산나무와 정자">
+                                        <figcaption>△ 당산나무와 정자</figcaption>
+                                    </div>
+
+                                    <div class="center-quote">
+                                        “전통문화의 단절은 민족정신의 파괴와 더불어<br>
+                                        세속적으로는 값을 매길 수 없는 관광상품의 파괴”
+                                    </div>
+
+                                    <p>
+                                        시골에서 자란 이들에게 당산(堂山)나무는 그리 낯선 이름이 아닐 것이다. 또한, 거대한 이 나무가 내어준 그늘. 그 넉넉함을 기억하고 있을 것이다. 
+                                        마을 가운데 나무를 심고 이를 지표 삼아 마을 공동체의 안녕과 풍요를 기원한 이 숭배의 대상이었던 이 나무는 '미신혁파'와 무관심 속에 
+                                        공동체마다 각기 달랐던 대부분 풍습과 함께 사라져 가고 있다. 비단 당산(堂山)뿐 아니라 많은 우리 민족 고유의 전통 맥이 단절되어 가고 있다.
+                                    </p>
+                                    <p>
+                                        관광 상품 개발을 위해 지자체가 얼마나 노력하고 있는지 뉴스의 행간만을 훑어보아도 알 수 있다. 
+                                        모 지자체에서는 관광 상품이라는 이름으로 '용 울음소리'를 만들어 사용하려 했다가 종교계의 반발로 무산된 다소 황당한 사연이 헤드라인을 장식하기도 했다. 
+                                        '오딘'이나 '토르'는 슈퍼히어로가 되어 아이들의 게임과 영화 그리고 만화속에서 살아 숨쉬고 '환웅'이나 '환인'은 미신이라는 이름으로 사라져가는 현실을 어떻게 보아야 할 것인가?
+                                    </p>
+
+                                    <hr>
+
+                                    <p>
+                                        이슬비가 내린다.<br>
+                                        우기에 다낭은 축축하고 괴이하여 종잡을 수가 없다. 비가 오다가 그치고 햇볕이 내리쬐다가 갑자기 폭우가 쏟아진다. 
+                                        거대한 나무를 바라보며 당산(堂山)을 떠올린 건 어찌 보면 시골 촌무지렁이였던 나에게 당연한 일일지도 모른다. 
+                                        아니면, 백거이(白居易)가 당현종과 양귀비의 뜨거운 사랑을 읊은 시 '장한가(長恨歌)'에 나오는 '연리지비익조(連理枝比翼鳥)'가 먼저 떠올라야 했을까?
+                                    </p>
+
+                                    <h3>“베트남인의 내면으로 들어가는 통로”<br>《쭈옌 끼에우-취교전(翠翹傳)》</h3>
+                                    
+                                    <div class="blog-image-container">
+                                        <img src="images/blog5_002.jpg" alt="쭈옌 끼에우 표지">
+                                        <figcaption>△ 투언호아 출판사에서 발간한 [쭈옌 끼에우] 표지</figcaption>
+                                    </div>
+
+                                    <p>
+                                        베트남 고전 소설의 최고봉이며 베트남인들의 내면으로 들어가는 통로라고 불리우는 베트남을 대표하는 운문 소설 《쭈옌 끼에우-취교전(翠翹傳)》에 
+                                        연리지와 비익조가 언급되고 있다. 우리의 심청전+춘향전과 비슷한 플롯에 이 베트남 고전 소설은 아버지를 위하여 몸을 팔게 된 주인공 끼에우가 겪는 
+                                        애절하고 파란만장한 사연과 '김쫑'과의 지고지순한 사랑에 대한 이야기를 다루고 있다.
+                                    </p>
+
+                                    <div class="poem">
+                                        “ [취교(翠翹)가] 말하네. “그렇게 장난치지 마세요.
+                                        저만치 떨어져서 제 말씀 좀 들어보세요!
+
+                                        ... 중략 ...
+
+                                        고금 기우 (寄寓)의 인연을 생각해 보건대,
+                                        어울리는 한 쌍으로는 그 누가 최장 (崔張)만 하겠어요.
+                                        운우 (雲雨)가 금석 (金石)을 무너뜨리니,
+                                        도가 지나쳐 언맹 (燕盟)은 서로 싫증이 나고 말았죠.
+                                        비익 (比翼), 연지(連枝)와 같이 다정스럽다가 마음 한 구석에서
+                                        경시하는 마음이 싹튼 것이지요.
+                                        서상 (西廂)에서 맹세하며 피운 향이 싸늘하게 식어버려,
+                                        도탑던 인연은 부끄러운 인연이 되고 말았죠.
+                                        먼저 북 (梭)을 던져 지키지 않고서. 훗날 그대에게 부끄럽게 된다면 누구 탓이겠어요? “
+                                        <br>
+                                        <small style="font-size:0.8em; color:#999;">&lt;춘향전&gt;과 &lt;쭈옌 끼에우&gt;의 주제 비교 연구 (MA. Tran Thi Bich Phuong - 논문에서 발췌)</small>
+                                    </div>
+
+                               
+
+                                    <p>
+                                        백년고목을 뒤로하고 다음 이동지인 'Cay da Con nai'로 이동하고자 길을 재촉하였다. 오던 길을 되돌아가서 갈림길이 나왔던 그곳에서 위쪽으로 방향을 잡아가기 시작했다. 
+                                        한참을 가다 보니 하이당(hải đăng - 燈塔)라는 문구가 보인다. 선짜산에서 동해를 비추는 등대인 모양이다. 미스터 탄(Mr.Thanh)은 숙소로 먼저 돌아가고 혼자 길을 가야 하는 상황이다. 
+                                        만나는 사람마다 계속해서 중국인이냐 질문을 하는데…. 짧은 베트남어가 약간은 걱정이 되었지만 호기심을 이기지 못하고 아래로 내려가 버리고 말았다.
+                                    </p>
+
+                                    <hr>
+
+                                    <div class="blog-image-container">
+                                        <img src="images/blog5_004.jpg" alt="등대">
+                                    </div>
+
+                                    <p>
+                                        인기척은 없고 개 한 마리가 나를 반긴다. 등대만 없다면 정원이 딸린 집이라고 해도 믿을 만하다. 텃밭도 있고 정원도 있고... 
+                                        관리인으로 보이는 듯한 한 명이 어슬렁거리고 나타나 경계하는 눈빛으로 왜 왔는지 그리고 '중국인'인지 묻는다.
+                                        오토바이 좌석에서 잡지를 보여주며 어설픈 베트남어로 최대한 상냥한 미소를 지으며 말했다.
+                                    </p>
+
+                                    <p class="dialogue-highlight" style="text-align: center; margin: 30px 0;">
+                                        ‘아잉어이,또이 라 응어이 한쿽, 또이 뭉 쭙헌 득컴?’<br>
+                                        <small style="font-weight:normal; font-size:0.9em;">(나는 한국인이고 사진을 찍을 수 있나요?)</small><br>
+                                        “오케이~”
+                                    </p>
+
+                                    <p>
+                                        너무 쉽게 승낙해서 오히려 조금은 당황스러웠으나 서둘러 건물 왼쪽에 있는 등대로 향했다.
+                                        저 멀리 배 한 척이 떠서 조용히 바다로 흘러들어가고 있다. 고즈넉한 풍경의 허허로움은 추수가 끝난 들녘을 바라보는 듯한 쓸쓸함이 함께 물들어 있었다. 
+                                        이왕 온 김에 등대 위까지 올라가고 싶었으나 오후 4시 무렵 날씨도 흐리고 너무 늦은 관계로 넉넉한 풍경에도 불구하고 마음만 조급해져 사진 몇 장을 남기고 다음 장소로 이동하고 있었다.
+                                    </p>
+                                    <p>
+                                        등대(燈塔)을 뒤로하고 조금 나아가자 바로 코앞에 인터컨티넨탈 호텔이 보이기 시작했다. 그러나, 점점 도로 상태가 열악해지더니 더 나아가고 싶었으나 
+                                        덩굴과 나무로 더는 전진은 불가능한 상황….이미 날은 저물고 더 이상의 전진이 불가능함을 깨달았다. 
+                                        ‘Cay Da Con Nai ‘는 다음날을 기약해야겠다는 아쉬움을 뒤로한 채 몰려오는 선짜산의 어둠을 오토바이 꽁무니에 매단 체 액셀러레이터를 당겼다.
+                                    </p>
+
+                                    <p class="read"><a href="#">위로가기</a></p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-pb-sm">
+							<div class="row">
+								<div class="col-md-10">
+									<h2>Let's Talk</h2>
+									<p> 질문이 있다면 아래 메일로 연락해주세요.</p>
+									<p><a href="#">ictcenter.vn@gmail.com</a></p>
+									<p class="colorlib-social-icons">
+										<a href="#"><i class="icon-facebook4"></i></a>
+										<a href="#"><i class="icon-twitter3"></i></a>
+										<a href="#"><i class="icon-googleplus"></i></a>
+										<a href="#"><i class="icon-dribbble2"></i></a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-pb-sm">
+							<h2>Latest Blog</h2>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/img-1.jpg);"></a>
+								<div class="desc">
+									<span>November 25, 2025</span>
+									<h3><a href="#">Art Gallery in Japan</a></h3>
+								</div>
+							</div>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/img-2.jpg);"></a>
+								<div class="desc">
+									<span>November 20, 2025</span>
+									<h3><a href="#">A Japanese Constellation</a></h3>
+								</div>
+							</div>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/img-3.jpg);"></a>
+								<div class="desc">
+									<span>November 15, 2025</span>
+									<h3><a href="blog_1.html">선짜산 기행</a></h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-pb-sm">
+							<h2>Newsletter</h2>
+							<p>필요하시면 뉴스레터를 신청하세요.</p>
+							<div class="subscribe text-center">
+								<div class="form-group">
+									<input type="text" class="form-control text-center" placeholder="Enter Email address">
+									<input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p>
+								&copy; Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart4" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
