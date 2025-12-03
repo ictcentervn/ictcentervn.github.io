@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>데이터 사일로와 AI 권력 구조</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Andrew Ng가 지적한 데이터 사일로 문제와 OpenAI·MS 구조의 변화에 대한 분석" />
+	<meta name="keywords" content="Andrew Ng, 데이터 사일로, PBC, OpenAI, RAG, Agentic-RAG" />
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+
+	<nav id="colorlib-main-nav" role="navigation">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+		<div class="js-fullheight colorlib-table">
+			<div class="colorlib-table-cell js-fullheight">
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="검색">
+							<button type="submit" class="btn btn-primary"><i class="icon-search3"></i></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="blog.html">베트남 이야기</a></li>
+							<li class="active"><a href="work.html">인공지능소식</a></li>
+							<li><a href="services.html">ICT교육</a></li>
+							<li><a href="about.html">About</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="head-title">AI NEWs</h2>
+						<a href="images/work-1.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-1.jpg);"><span><i class="icon-search3"></i></span></a>
+						<a href="images/about.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/about.jpg);"><span><i class="icon-search3"></i></span></a>
+						<a href="images/about-2.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/about-2.jpg);"><span><i class="icon-search3"></i></span></a>
+						<a href="images/blog1.png" class="gallery image-popup-link text-center" style="background-image: url(images/blog1.png);"><span><i class="icon-search3"></i></span></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</nav>
+
+	<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="index.html"><span>낭만</span><span>浪漫</span></a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="colorlib-work">
+			<div class="container">
+
+				<div class="row text-center">
+					<h2 class="bold">AI ECONOMY</h2>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<span>Data · Power · Agents</span>
+						<h2>에이전트 시대, 데이터 사일로와 AI 권력 구조</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rotate">
+							<h2 class="heading">DATA WORLD</h2>
+						</div>
+					</div>
+				</div>
+
+				<!-- 본문 시작 -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="work-entry animate-box">
+							<a class="work-img" style="background-image: url(images/new3_0.jpg);"></a>
+							<div class="col-md-8 col-md-offset-2">
+
+								<div class="desc">
+
+									<h2>“에이전트 시대엔 데이터 장벽이 더 심해진다”</h2>
+									<p>
+										Andrew Ng은 최근 뉴스레터에서, 에이전트(Agentic) AI가 발전할수록  
+										<strong>데이터 사일로(Data Silo)</strong> 문제가 훨씬 예민해지고 있다고 강조했다.  
+										그는 실제로 한 기관이 API 키 하나 발급해 주는 대가로  
+										<strong>2만 달러를 요구했던 사례</strong>를 이야기하며,  
+										데이터 접근 비용이 AI 활용의 가장 큰 병목이 되고 있다고 말했다.
+									</p>
+									<p>
+										에이전트형 AI는 더 넓고 일관된 데이터 환경을 필요로 하지만,  
+										각 기관은 자신들의 데이터를 더욱 폐쇄적으로 관리하는 방향으로 움직이고 있다.  
+										AI가 강해질수록 데이터는 더 “잠금(locked)”되는 역설이 벌어지는 셈이다.
+									</p>
+
+									<h2>OpenAI의 체질 변화</h2>
+									<p>
+										OpenAI는 원래 “인류 전체의 이익을 위한 비영리 연구 단체”로 시작했지만,  
+										지금은 <strong>PBC(Public Benefit Corporation)</strong> 형태의 기업 구조를 갖추며  
+										사실상 무제한의 수익 창출이 가능한 형태로 재편되었다.
+									</p>
+									<p>
+										겉으론 공익을 표방하지만 실질적으로는  
+										비영리 재단이 이사회 선임권을 쥐고,  
+										영리 회사는 투자자에게 수익을 돌려주는  
+										<strong>이중 구조의 최적화된 자본 모델</strong>이 만들어졌다.
+									</p>
+
+									<h2>그 구조에서 가장 큰 이익을 얻는 곳</h2>
+									<p>
+										가장 큰 수혜자는 놀랍게도 MS다.  
+										OpenAI에 약 130억 달러를 투자한 뒤,  
+										평가 차익은 10배 이상 불어났고,  
+										AGI가 완성되기 전까지는 사실상  
+										<strong>독점적 기술 사용권</strong>까지 확보했다.
+									</p>
+									<p>
+										생태계 전체에서 데이터와 모델을 누가 통제하는지가  
+										어떤 기업이 승자가 되는지를 명확히 보여주는 사례다.
+									</p>
+
+									<h2>Andrew Ng의 해법</h2>
+									<p>
+										그가 제시하는 해결책은 의외로 단순하다.  
+										법과 규제가 아니라,  
+										<strong>각 조직이 자신의 데이터를 스스로 챙기고 관리해야 한다</strong>는 것이다.
+									</p>
+									<p>
+										그러나 이는 공동의 규칙이 필요한 시점에  
+										각자도생을 권하는 셈이어서 한계가 분명하다.  
+										결과적으로 기관마다 데이터를 더 굳게 닫아 걸고,  
+										데이터 격차는 더 벌어질 가능성이 높다.
+									</p>
+
+									<h2>폐쇄형 RAG 시스템의 가속</h2>
+									<p>
+										최근 기관 내부 데이터만으로 구축하는  
+										<strong>폐쇄형 RAG(Retrieval-Augmented Generation) 시스템</strong>이 폭발적으로 증가하는 이유도 여기에 있다.  
+										누구도 데이터를 외부에 공유하고 싶어 하지 않는 환경에서,  
+										RAG는 데이터를 내부에 가둔 상태로 AI 기능을 활용할 수 있게 해주는 가장 현실적인 옵션이다.
+									</p>
+
+									<h2>Agentic-RAG 구축 요청이 급증</h2>
+									<p>
+										바이오넥서스 같은 기업들이 최근  
+										“기관 내 데이터 기반의 과학자 수준 추론이 가능한 Agentic-RAG” 요청을 급격히 많이 받는 배경도 동일하다.
+									</p>
+									<p>
+										기관은 데이터를 공유할 수 없고,  
+										그렇다고 AI 혁신에서 뒤처질 수도 없으니  
+										<strong>“데이터는 안 내놓되, AI는 내부에서 최대한 활용하겠다”</strong>는 전략으로 이동하는 것이다.
+									</p>
+
+									<hr>
+
+									<p>
+										데이터는 점점 더 높게 쌓이고,  
+										그 문은 점점 더 좁아지고 있다.  
+										에이전트 시대는 오히려 AI가 아니라  
+										<strong>데이터를 가진 자</strong>가 모든 힘을 갖는 시대일지도 모른다.
+										<br>출처: https://www.deeplearning.ai/the-batch/issue-326
+									</p>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 본문 끝 -->
+
+			</div>
+		</div>
+
+
+
+	<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-pb-sm">
+							<div class="row">
+								<div class="col-md-10">
+									<h2>Let's Talk</h2>
+									<p> 질문이 있다면 아래 메일로 연락해주세요.</p>
+									<p><a href="#">ictcenter.vn@gmail.com</a></p>
+									<p class="colorlib-social-icons">
+										<a href="#"><i class="icon-facebook4"></i></a>
+										<a href="#"><i class="icon-twitter3"></i></a>
+										<a href="#"><i class="icon-googleplus"></i></a>
+										<a href="#"><i class="icon-dribbble2"></i></a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-pb-sm">
+							<h2>Latest Blog</h2>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/blog0_00.jpg);"></a>
+								<div class="desc">
+									<span>November 5, 2025</span>
+									<h3><a href="blog_0.html">선짜산 탐방 1편</a></h3>
+								</div>
+							</div>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/blog0_06.webp);"></a>
+								<div class="desc">
+									<span>November 7, 2025</span>
+									<h3><a href="blog_2.html">선짜산 탐방 3편</a></h3>
+								</div>
+							</div>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/blog1_0.jpg);"></a>
+								<div class="desc">
+									<span>November 15, 2025</span>
+									<h3><a href="blog_1.html">선짜산 탐방 2편</a></h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-pb-sm">
+							<h2>Newsletter</h2>
+							<p>필요하시면 뉴스레터를 신청하세요.</p>
+							<div class="subscribe text-center">
+								<div class="form-group">
+									<input type="text" class="form-control text-center" placeholder="Enter Email address">
+									<input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p>
+								&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart4" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+	</body>
+</html>
