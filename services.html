@@ -9,7 +9,7 @@
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 
-  <!-- Facebook and Twitter integration -->
+	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
@@ -20,34 +20,80 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 	
-	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Owl Carousel -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
-
 	<link rel="stylesheet" href="css/style.css">
 
+	<!-- 추가 스타일 -->
+	<style>
+		.services-img-limit {
+    	margin-top: 240px !important; /* 원하는 값으로 조정 */
+}
+		/* 상단 construction, ed-01 같은 큰 이미지 제한 */
+		.services-img-limit {
+			width: 400px;
+			height: 400px;
+			max-width: 100%;
+			max-height: 100%;
+			background-size: cover;
+			background-position: center;
+		}
 
-	<!-- Modernizr JS -->
+		/* 블록코딩 섹션: 왼쪽 이미지 / 오른쪽 텍스트 레이아웃 */
+		.ict-flex {
+			display: flex;
+			gap: 40px;
+			align-items: flex-start;
+			margin-top: 60px;
+		}
+
+		.ict-left {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			flex-shrink: 0;
+		}
+
+		.ict-left .ict-img {
+			width: 400px;
+			height: 300px;
+			background-size: cover;
+			background-position: center;
+			border-radius: 6px;
+		}
+
+		.ict-right {
+			flex: 1;
+		}
+
+		@media (max-width: 767px) {
+			.services-img-limit {
+				width: 100%;
+				height: 300px;
+			}
+			.ict-flex {
+				flex-direction: column;
+			}
+			.ict-left .ict-img {
+				width: 100%;
+				height: 200px;
+			}
+		}
+	</style>
+
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
 	</head>
 	<body>
 
@@ -94,7 +140,7 @@
 			</div>
 		</div>
 	</nav>
-	
+
 	<div id="colorlib-page">
 		<header>
 			<div class="container">
@@ -108,27 +154,33 @@
 				</div>
 			</div>
 		</header>
+
 		<div id="colorlib-services">
 			<div class="container">
 				<div class="row text-center">
-					<h2 class="bold">ICT 교육</h2>
+					<h5 class="bold">ICT</h5>
 				</div>
+
 				<div class="row">
 					<div class="col-md-12">
+
+						<!-- ICT 교육 기초 영역 -->
 						<div class="services-flex">
 							<div class="one-third">
 								<div class="row">
 									<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
 										<span>ICT Education</span>
-										<h2>ICT교육</h2>
+										<h2>ICT교육 기초</h2>
 									</div>
 								</div>
+
 								<div class="row">
 									<div class="col-md-12">
 										<div class="rotate">
-											<h2 class="heading">education</h2>
+											<h2 class="heading">Basic</h2>
 										</div>
 									</div>
+
 									<div class="col-md-6">
 										<div class="services animate-box">
 											<h3>1 - Python Projects</h3>
@@ -138,6 +190,7 @@
 												<li>데이터시각화</li>
 											</ul>
 										</div>
+
 										<div class="services animate-box">
 											<h3>3 - Arduino Projects</h3>
 											<ul>
@@ -147,15 +200,17 @@
 											</ul>
 										</div>
 									</div>
+
 									<div class="col-md-6">
 										<div class="services animate-box">
-											<h3>2 - Data & AI</h3>
+											<h3>2 - Data &amp; AI</h3>
 											<ul>
 												<li>Orange 3</li>
 												<li>Sklearn</li>
 												<li>AI model</li>
 											</ul>
 										</div>
+
 										<div class="services animate-box">
 											<h3>4 - Block Coding</h3>
 											<ul>
@@ -165,21 +220,138 @@
 											</ul>
 										</div>
 									</div>
+
 								</div>
 							</div>
-							<div class="one-forth services-img" style="background-image: url(images/construction.jpg);">
+
+							<div class="one-forth services-img services-img-limit" style="background-image: url('images/edu-0.jpeg');">
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		
+						<!-- 블록 코딩 vs 스크립트 코딩 영역 (새 레이아웃) -->
+						<div class="ict-flex">
 
-		
+							<!-- 왼쪽: 이미지 4개 세로 정렬 -->
+							<div class="ict-left">
+								<div class="ict-img" style="background-image: url('images/ed-01.png');"></div>
+								<div class="ict-img" style="background-image: url('images/ed-02.png');"></div>
+								<div class="ict-img" style="background-image: url('images/ed-03.png');"></div>
+								<div class="ict-img" style="background-image: url('images/ed-04.png');"></div>
+							</div>
 
-			<footer>
+							<!-- 오른쪽: 텍스트 설명 -->
+							<div class="ict-right">
+								<div class="animate-box intro-heading">
+									<span>ICT EDUCATION</span>
+									<h2>블록 코딩과 스크립트 코딩의 비교</h2>
+								</div>
+
+								<div class="services animate-box">
+									<h3>블록 코딩이란?</h3>
+									<p>
+										블록 코딩은 퍼즐 조각처럼 생긴 블록들을 끌어다 붙여서 프로그램을 만드는 방식입니다.
+										글자를 직접 쓰지 않아도 되기 때문에 실수를 줄이고, 구조를 눈으로 쉽게 볼 수 있습니다.
+									</p>
+								</div>
+
+								<div class="services animate-box">
+									<h3>블록 코딩의 장점</h3>
+
+									<p>
+										<strong> 1. 문법 걱정 없이 생각에 집중할 수 있습니다.</strong><br>
+										스크립트 코딩은 철자나 괄호를 틀리면 오류가 나지만,
+										블록 코딩은 이미 맞는 형태로 만들어진 블록만 사용하므로 실수할 확률이 매우 낮습니다.<br>
+										→ 그래서 아이들이 문법 대신 ‘어떤 동작을 만들까?’라는 사고 자체에 집중할 수 있습니다.
+									</p>
+
+									<p>
+										<strong> 2. 구조를 눈으로 보면서 이햐합니다.</strong><br>
+										반복(Loop), 조건문(If), 변수(Variable) 같은 문법 개념을
+										블록의 모양과 색으로 구분하기 때문에
+										초보자도 복잡한 구조를 한눈에 파악할 수 있습니다.
+									</p>
+
+									<p>
+										<strong> 3. 실험.수정이 쉽습니다</strong><br>
+										블록을 끌어서 빼거나 넣기만 하면 프로그램이 바뀌므로
+										시도 → 실행 → 수정 → 다시 실행 과정을 빠르게 반복하며 배울 수 있습니다.
+										이는 컴퓨팅 사고력을 크게 키워줍니다.
+									</p>
+
+									<p>
+										<strong> 4. 실제 코딩(스크립트)으로 자연스럽게 이어집니다</strong><br>
+										블록 코딩을 익힌 학생은 이미
+										순차 → 조건 → 반복 → 변수 → 함수 구조를 머릿속에 갖춘 상태가 됩니다.<br>
+										그래서 스크립트 코딩으로 넘어갈 때
+										“아, 이게 블록에 있던 반복, 이게 조건, 이게 변수구나!” 하고 쉽게 연결됩니다.
+									</p>
+								</div>
+
+								<div class="services animate-box">
+									<h3>블록 코딩 vs 스크립트 코딩 </h3>
+									<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th>구분</th>
+													<th>블록 코딩 (Block Coding)</th>
+													<th>스크립트 코딩 (Script Coding)</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><strong>입력 방식</strong></td>
+													<td>블록을 끌어 붙이기</td>
+													<td>글자와 기호를 타이핑</td>
+												</tr>
+												<tr>
+													<td><strong>문법 오류</strong></td>
+													<td>거의 없음</td>
+													<td>철자나 괄호 하나만 틀려도 오류</td>
+												</tr>
+												<tr>
+													<td><strong>이해도</strong></td>
+													<td>눈으로 보고 직관적으로 이해</td>
+													<td>구조를 머리로 상상해야 함</td>
+												</tr>
+												<tr>
+													<td><strong>속도</strong></td>
+													<td>빠르게 결과 확인 가능</td>
+													<td>익숙해지기까지 시간이 필요</td>
+												</tr>
+												<tr>
+													<td><strong>학습 난이도</strong></td>
+													<td>쉬움</td>
+													<td>중급 이상</td>
+												</tr>
+												<tr>
+													<td><strong>장점</strong></td>
+													<td>개념 학습·사고력 발달에 최적</td>
+													<td>실제 개발 능력 향상</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="services animate-box">
+									<p>
+										<strong>결론:</strong>
+										블록 코딩은 문법 실수를 걱정하지 않고 핵심 개념과 사고력에 집중하게 해 주며,
+										스크립트 코딩으로 자연스럽게 넘어갈 수 있는 최고의 기초 코딩 학습 단계입니다.
+									</p>
+								</div>
+
+							</div><!-- /.ict-right -->
+
+						</div><!-- /.ict-flex -->
+
+					</div><!-- /.col-md-12 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /#colorlib-services -->
+
+		<footer>
 			<div id="footer">
 				<div class="container">
 					<div class="row">
@@ -187,8 +359,8 @@
 							<div class="row">
 								<div class="col-md-10">
 									<h2>Let's Talk</h2>
-									<p> 질문이 있다면 아래 메일로 연락해주세요.</p>
-									<p><a href="#">ictcenter.vn@gmail.com</a></p>
+									<p>질문이 있다면 아래 메일로 연락해주세요.</p>
+									<p><a href="mailto:ictcenter.vn@gmail.com">ictcenter.vn@gmail.com</a></p>
 									<p class="colorlib-social-icons">
 										<a href="#"><i class="icon-facebook4"></i></a>
 										<a href="#"><i class="icon-twitter3"></i></a>
@@ -198,30 +370,32 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="col-md-4 col-pb-sm">
 							<h2>Latest Blog</h2>
 							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/blog0_00.jpg);"></a>
+								<a href="blog_0.html" class="featured-img" style="background-image: url(images/blog0_00.jpg);"></a>
 								<div class="desc">
 									<span>November 5, 2025</span>
 									<h3><a href="blog_0.html">선짜산 탐방 1편</a></h3>
 								</div>
 							</div>
 							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/blog0_06.webp);"></a>
+								<a href="blog_2.html" class="featured-img" style="background-image: url(images/blog0_06.webp);"></a>
 								<div class="desc">
 									<span>November 7, 2025</span>
 									<h3><a href="blog_2.html">선짜산 탐방 3편</a></h3>
 								</div>
 							</div>
 							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/blog1_0.jpg);"></a>
+								<a href="blog_1.html" class="featured-img" style="background-image: url(images/blog1_0.jpg);"></a>
 								<div class="desc">
 									<span>November 15, 2025</span>
 									<h3><a href="blog_1.html">선짜산 탐방 2편</a></h3>
 								</div>
 							</div>
 						</div>
+
 						<div class="col-md-4 col-pb-sm">
 							<h2>Newsletter</h2>
 							<p>필요하시면 뉴스레터를 신청하세요.</p>
@@ -233,38 +407,33 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<p>
-								&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart4" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								&copy;
+								<script>document.write(new Date().getFullYear());</script>
+								All rights reserved | This template is made with
+								<i class="icon-heart4" aria-hidden="true"></i> by
+								<a href="https://colorlib.com" target="_blank">Colorlib</a>
 							</p>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</footer>
-	
-	</div>
 
-	<!-- jQuery -->
+	</div><!-- /#colorlib-page -->
+
 	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Owl Carousel -->
 	<script src="js/owl.carousel.min.js"></script>
-	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
-
-	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
 
 	</body>
 </html>
-

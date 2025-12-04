@@ -19,6 +19,7 @@ $brand-body-bg: #f9f7f7;
 $input-border-focus: $brand-primary !default;
 $form-group-margin-bottom: 30px !default;
 
+//이미지
 
 
 // Mixin
@@ -468,6 +469,12 @@ header{
 	}
 }
 
+.services-img-limit {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
 
 // #colorlib-instagram,
 #colorlib-services,
