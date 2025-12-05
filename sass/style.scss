@@ -208,6 +208,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* PC 화면에서의 높이 설정 */
+      .custom-work-img-size {
+          height: 100px !important; /* !important는 기존 테마 스타일을 무시하고 강제로 적용한다는 의미입니다 */
+      }
+
+      /* (선택사항) 모바일 화면(폭 768px 이하)에서는 높이를 더 줄이고 싶을 때 */
+      @media screen and (max-width: 768px) {
+          .custom-work-img-size {
+              height: 150px !important;
+          }
+      }
+
+
 
 #colorlib-main-nav {
 	position: absolute;

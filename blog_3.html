@@ -27,7 +27,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 	
-	<!-- Animate.css -->
+	<!-- Aimate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
@@ -41,7 +41,19 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
+<style>
+      /* PC 화면에서의 높이 설정 */
+      .top-img-size {
+          height: 500px !important; /* !important는 기존 테마 스타일을 무시하고 강제로 적용한다는 의미입니다 */
+      }
 
+      /* (선택사항) 모바일 화면(폭 768px 이하)에서는 높이를 더 줄이고 싶을 때 */
+      @media screen and (max-width: 768px) {
+          .top-img-size {
+              height: 250px !important;
+          }
+      }
+  </style>
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -131,7 +143,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="blog.html" class="work-img" style="background-image: url(images/blog3_0.jpg);">
+							<a href="blog.html" class="work-img top-img-size" style="background-image: url(images/blog3_0.jpg);">
 							</a>
 							<div class="col-md-8 col-md-offset-2">
 								<div class="desc">
